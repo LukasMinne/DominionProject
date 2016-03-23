@@ -9,35 +9,51 @@ package programmeerproject;
  *
  * @author laurens
  */
-public class VictoryCards {
+public class VictoryCards 
+{
     private int value;
     private int cost;
     
-    public VictoryCards(String victoryCard){
-        switch (victoryCard){
-            case "estate":  estate();
+    public VictoryCards(String victoryCard)
+    {
+        switch (victoryCard)
+        {
+            case "estate":  
+                estate();
             break;
-            case "duchy":  duchy();
+            case "duchy":  
+                duchy();
             break;
-            case "province":    province();
+            case "province":    
+                province();
         }
     }
-    public void estate(){
+    
+    public void estate()
+    {
         this.value = 1;
         this.cost = 2;
     }
-    public void duchy(){
+    
+    public void duchy()
+    {
         this.value = 3;
         this.cost = 5;
     }
-    public void province(){
+    
+    public void province()
+    {
         this.value = 6;
         this.cost = 8;
     }
-    public int getValue(){
+    
+    public int getValue()
+    {
         return this.value;
     }
-    public int getCost(){
+    
+    public int getCost()
+    {
         return this.cost;
     }
 }
